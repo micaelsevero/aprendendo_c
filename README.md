@@ -1,5 +1,122 @@
 # aprendendo_c
+aula 15
+//Relembrando laço while
+    //int i=0;// i <- 0;
+   // for (int i=5; i > 0;--i)
+   // {
 
+    //    printf("\n i=%d",i);
+
+    //}
+//    printf("\n Terminou com i=%d\n",i);
+   // int i=0;
+   // while( i < 5)
+//{
+    //    printf("\n i=%d",i);
+    //    i++;
+   // }
+   // printf("\n Terminou com i=%d\n",i);
+//
+
+
+    //funçoes sub rotinas
+   // int funcao(){ // declara uma funcao que retorna um int
+  //  return 15;// valor do int retornado é 7
+  //  }
+
+    int x;// variavel global.Estyá fora de qualquer função
+    //const float pi= 3.1415926535;
+
+    void funcao()
+    {
+       static int x=15;// variavel local(automatica).
+        x++;// incrementa a var global x.
+        printf("Valor de x alterado para %d\n",x);
+    }
+
+    int fatorial (int n)
+    {
+        int produto = 1;
+        while (n > 1)
+        {
+            produto *= n;
+            --n;
+        }
+        return produto;
+    }
+
+    int main()// main é uma função retorna um int
+    {
+      //  int x = funcao();//invoca a função.atribui valor de retorno a x.
+      //  printf("\n valor retornado = %d \n ",x);
+    //  int x=5;
+    //  int y= dobro(x);
+
+     // printf("x=%d\t y= %d \n",x,y);
+
+
+
+   //  float np1= 6.5;
+    // float np2= 7.5;
+    // float ms= media(np1,np2);
+   //  printf("\n Media = %.2f \n",ms);
+ //  x = 7;
+  // funcao();
+  // funcao();
+  // funcao();
+  // printf("\n Valor final de  x = %d",x);
+
+   int n;
+   printf("Digite um numero:");
+   scanf("%d",&n);
+   int fat = fatorial(n);
+   printf("\n %d ! = %d \n",n,fat);
+    return 0;// o valor de 0 é retornado
+}
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+float media(float a, float b)//função que retorna a media
+   {
+       return (a+b) / 2;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aula 16 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 int global = 5; // e acessivel por todas as funcoes
  int x=5;
 
