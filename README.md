@@ -179,37 +179,71 @@ aula 16_01   ///////////////////////////////////////////////////////////////////
 
 
 
-/ a função soma recebe dois parametros do tipo int.
+// a função soma recebe dois parametros do tipo int.
 //parametros a e b. na verdade são duas variaveis que contém
 // o valor dos argumentos durante a invocação.
-int soma(int a,int b)
+  //int soma(int a,int b)
+ //{
+  //  return a+b;//retorna a soma dos parâmetros a e b.
+//  }
+
+//int mult(int a,int b)
+//{
+ //   return a * b;
+//}
+
+//int sub(int a,int b)
+//{
+ //   return a - b;
+//}
+
+int soma_acumulativa (int n)
 {
-    return a+b;//retorna a soma dos parâmetros a e b.
+    int soma=0;// variavel soma inicia com zero
+    for (int i=1; i <= n;i++)//para os numeros de 1 até n;
+    {
+        soma += i;//adiciona o valor i a variavel soma
+
+    }
+    return soma;//retorna o valor da variável soma.
+
 }
 
-int mult(int a,int b)
+int fatorial (int n)
 {
-    return a * b;
+    int produto=1;// o fatorial começa com 1.
+    for (int i=1; i <= n;i++)
+    {
+        produto *= i;
+    }
+    return produto;
 }
 
-int sub(int a,int b)
-{
-    return a - b;
-}
+
 
 
 
 int main()//main() retorna int e é a função principal
 {
-    int x=20;
-    int y=5;
-    int z = soma(x,y);
-    printf("\n soma = %d\n",z);
-    int i = sub(x,y);
-    printf("\n sub = %d\n",i);
-    int v = mult(x,y);
-    printf("\n mult = %d\n",v);
 
+   // int x;
+    //printf("Digite o valor do limite:");
+   // scanf("%d",&x);
+   // int y = soma_acumulativa(x);
+   // printf("\n Soma acumulada = %d \n",y);
+    int x;
+    printf("Digite o valor a ser fatorado:");
+    scanf("%d",&x);
+    int y = fatorial(x);
+    printf("\n fatorial e = %d \n",y);
+  //  int x=20;
+  //  int y=5;
+  //  int z = soma(x,y);
+   // printf("\n soma = %d\n",z);
+  //  int i = sub(x,y);
+  //  printf("\n sub = %d\n",i);
+  //  int v = mult(x,y);
+  //  printf("\n mult = %d\n",v);
+//
     return 0;
 }
-
