@@ -357,6 +357,40 @@ printf("\n vetor[2] = %d", vetor[2]);
 
 
 
+////////////////////////////////////
+
+aula 17_03
+
+
+
+int main()
+{
+
+ int vetor[3];
+
+ //vetor[0]= 5;
+ //vetor[1]= 3;
+ //vetor[2]= 4;
+ for (int i=0;i<3;i++)
+ {
+     int valor;
+     printf("\n Digite o valor do elemento de indice %d: ",i);
+     scanf("%d",&valor);
+     vetor[i]=valor;
+ }
+ for(int i=0;i<3;i++)
+ {
+     printf("\n vetor[%d]=%d",i,vetor[i]);
+ }
+
+// printf("\n vetor[0] = %d", vetor[0]);
+//printf("\n vetor[1] = %d", vetor[1]);
+//printf("\n vetor[2] = %d", vetor[2]);
+
+    return 0;
+}
+
+
 
 
 
