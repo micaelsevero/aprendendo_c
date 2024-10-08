@@ -247,3 +247,116 @@ int main()//main() retorna int e é a função principal
 //
     return 0;
 }
+
+
+
+
+
+///////////////////////// aula 17 
+
+aula 17 
+void funcao( int profundidade ) // funcao recursiva
+{
+    // (char x ,int y)
+    //int a = 5 + x;
+    //int b = 6 - y;
+    //int c = a + b;
+   // printf("\n %d",c);
+   if (profundidade < 0)
+   {
+       return;
+   }
+   printf("\n profundidade = %d ",profundidade);
+   funcao(profundidade - 1);// funcao() invoca a si mesma.
+
+}
+int main()
+{
+    // funcao(5,8);
+    funcao(8);
+    return 0;
+
+
+
+}
+
+
+aula 17_01
+int fatorial(int n)
+{
+   // int produto= 1;
+   // while (n > 1)
+   // {
+    //    produto*= n;
+    //    --n;
+   // }
+
+   return n > 1 ? n * fatorial(n -1):1;
+
+   if (n < 2)
+   {
+       return 1;
+   }
+   else
+   {
+       return n * fatorial(n -1);
+   }
+
+
+
+   // if (n < 2){return 1;}
+   // while(n)
+   // {
+    //    produto*=n;
+   //     --n;
+  ///  }
+  ////////////////////////////
+   // for(int i = 1; i <= n; i++)
+  //  {
+   //     produto *= i;
+  //  }
+//    return produto;
+
+}
+
+int main()
+{
+    //int x=5;
+   // int y= fatorial(x);
+    for(int x=0;x<12;x++)
+    {
+        int y=fatorial(x);
+          printf("\n %d ! = %d \n", x,y);
+    }
+
+
+    return 0;
+}
+
+
+
+
+//////////////////////////////////////////
+
+aula 17_02
+int main()
+{
+
+ int vetor[3];
+
+ vetor[0]= 5;
+ vetor[1]= 3;
+ vetor[2]= 4;
+ 
+ printf("\n vetor[0] = %d", vetor[0]);
+printf("\n vetor[1] = %d", vetor[1]);
+printf("\n vetor[2] = %d", vetor[2]);
+
+    return 0;
+}
+
+
+
+
+
+
