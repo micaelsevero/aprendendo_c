@@ -391,6 +391,39 @@ int main()
 }
 
 
+//////////////////////////////
+aula 18
+
+int main()
+{
+   //vetor de 5 elementos do tipo int.
+   // os índices variam de 0 a 4.
+   int vetor[5];
+
+   vetor[0]=8;
+   vetor[1]=7;
+   vetor[2]=4;
+   vetor[3]=2;
+   vetor[4]=1;//ultimo elemento
+   //exibe na sequencia inversa
+
+
+
+  // for (int indice=0;indice < 5;indice++)
+  // {
+   // printf("\n vetor[%d]= %d \n",indice,vetor[indice]);
+   //}
+
+   /*  for (int indice=4;indice > -1;indice--)
+   {
+    printf("\n vetor[%d]= %d \n",indice,vetor[indice]);
+   }
+   */
+
+
+
+   aula 18_02
+
 
 
 
