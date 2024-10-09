@@ -420,9 +420,39 @@ int main()
    }
    */
 
-
+///////////////////////////////////////
 
    aula 18_02
+
+
+   int main()
+{
+   int vetor[NUM_ELEMENTOS];
+   // OS indices variam de 0 a num_elementos - 1
+  // vetor[0]=8;
+  // vetor[1]=7;
+   //vetor[2]=4;
+   //vetor[3]=2;
+   //vetor[4]=1;
+   //vetor[5]=-10;
+   for (int indice=0; indice < NUM_ELEMENTOS;indice++)
+   {
+       int valor;
+       printf("\n Digite o valor do vetor[%d]:",indice);
+       scanf("%d",&valor);
+       vetor[indice]=valor;
+   }
+
+   printf("\n Exibindo os valores fornecidos: \n");
+
+
+   for (int indice=0;indice < NUM_ELEMENTOS;indice++)
+   {
+    printf("\n vetor[%d]= %d \n",indice,vetor[indice]);
+   }
+
+    return 0;
+}
 
 
 
