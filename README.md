@@ -491,18 +491,7 @@ int main()
 ////////////////////////
 aula 18_03
 
-int main()
-{
-   char texto[50]= "Agora sim "; //{'0','i','!','\0'};// char é um texto de 50 caracteres
-
-
-   printf("%s",texto);//para exibir string use $s
-    return 0;
-}
-
-
-aula 18_04
-
+//função recebe um valor de caractere como parametro
 int numeroDeCaracteres(char texto[])
 {
 
@@ -525,6 +514,13 @@ int main()
    gets(texto);
    int comprimento = numeroDeCaracteres(texto);
    printf("\n A string:\n %s \n possui %d caracteres.",texto,comprimento  );
+
+   printf("\n Exibindo os caracteres em ordem inversa:\n");
+   for(int i= comprimento-1; i >= 0;i--)
+   {
+       printf("%c",texto[i]);
+   }
+   printf("\n\n");
     return 0;
  // printf("Voce digitou: \n %s \n",texto);
 
@@ -557,7 +553,6 @@ int main()
 
 
 }
-
 
 
 
