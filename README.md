@@ -556,5 +556,84 @@ int main()
 
 
 
+/////////////////////////////////////// aula 18_04
+
+//função recebe um valor de caractere como parametro
+int numeroDeCaracteres(char texto[])
+{
+
+
+ int contador = 0;
+    while(texto[contador] != '\0')
+    {
+        ++contador;
+    }
+
+    return contador;
+    }
+
+void imprimeInvertendo(char texto[])
+{
+    int comprimento= numeroDeCaracteres(texto);
+    for(int i= comprimento - 1; i >= 0;i--)
+    {
+        printf("%c",texto[i]);
+    }
+}
+
+void imprimeVertical(char texto[])
+{
+    for(int i=0;texto[i] != '\0';i++)
+    {
+        printf("\n%c",texto[i]);
+    }
+    printf("\n");
+}
+
+
+int main()
+{
+   char texto[50];
+  printf("Digite algo:");
+  gets(texto);
+  imprimeVertical(texto);
+  imprimeInvertendo(texto);
+
+
+
+
+ // printf("Voce digitou: \n %s \n",texto);
+
+  // char texto[50]= "Agora sim "; //{'0','i','!','\0'};// char é um texto de 50 caracteres
+  // texto[5]='\0';// caractere da posição 5 virou nulo
+
+ // int indice=0;
+ // while(texto[indice] != '\0')
+ // {
+   //   printf("\n %c",texto[indice]);
+   //   indice++;
+
+  //}
+ // for (int indice=0;texto[indice] != '\0';indice++)
+ // {
+     // printf("\n %c",texto[indice]);
+ // }
+
+  // printf("%s",texto);//para exibir string use $s]]
+
+ // char texto[50];
+  //printf("Digite algo:");
+ // gets(texto);
+ // printf("Voce digitou: \n %s \n",texto);
+ //int contador = 0;
+ //while(texto[contador] != '\0')
+ //{
+  //   ++contador;
+ //}
+
+
+}
+
+
 
 
