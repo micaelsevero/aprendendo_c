@@ -456,6 +456,109 @@ int main()
 
 
 
+///////////////////////////// 18_03
+
+int main()
+{
+  float vetor[NUM_ELEMENTOS];
+   // OS indices variam de 0 a num_elementos - 1
+  // vetor[0]=8;
+  // vetor[1]=7;
+   //vetor[2]=4;
+   //vetor[3]=2;
+   //vetor[4]=1;
+   //vetor[5]=-10;
+   for (int indice=0; indice < NUM_ELEMENTOS;indice++)
+   {
+       float valor;
+       printf("\n Digite o valor do vetor[%d]:",indice);
+       scanf("%f",&valor);
+       vetor[indice]=valor;
+   }
+
+   printf("\n Exibindo os valores fornecidos: \n");
+
+
+   for (int indice=NUM_ELEMENTOS - 1;indice >= 0;indice--)
+   {
+    printf("\n vetor[%d]= %.2f \n",indice,vetor[indice]);
+   }
+
+    return 0;
+}
+
+
+////////////////////////
+aula 18_03
+
+int main()
+{
+   char texto[50]= "Agora sim "; //{'0','i','!','\0'};// char é um texto de 50 caracteres
+
+
+   printf("%s",texto);//para exibir string use $s
+    return 0;
+}
+
+
+aula 18_04
+
+int numeroDeCaracteres(char texto[])
+{
+
+
+ int contador = 0;
+    while(texto[contador] != '\0')
+    {
+        ++contador;
+    }
+
+    return contador;
+    }
+
+
+int main()
+{
+
+   char texto[50];
+   printf("Digite algo:");
+   gets(texto);
+   int comprimento = numeroDeCaracteres(texto);
+   printf("\n A string:\n %s \n possui %d caracteres.",texto,comprimento  );
+    return 0;
+ // printf("Voce digitou: \n %s \n",texto);
+
+  // char texto[50]= "Agora sim "; //{'0','i','!','\0'};// char é um texto de 50 caracteres
+  // texto[5]='\0';// caractere da posição 5 virou nulo
+
+ // int indice=0;
+ // while(texto[indice] != '\0')
+ // {
+   //   printf("\n %c",texto[indice]);
+   //   indice++;
+
+  //}
+ // for (int indice=0;texto[indice] != '\0';indice++)
+ // {
+     // printf("\n %c",texto[indice]);
+ // }
+
+  // printf("%s",texto);//para exibir string use $s]]
+
+ // char texto[50];
+  //printf("Digite algo:");
+ // gets(texto);
+ // printf("Voce digitou: \n %s \n",texto);
+ //int contador = 0;
+ //while(texto[contador] != '\0')
+ //{
+  //   ++contador;
+ //}
+
+
+}
+
+
 
 
 
