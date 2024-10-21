@@ -706,3 +706,54 @@ int main()
 
 
 
+
+//////////////////////////////////////////// matriz com função
+
+void exibir_matriz (int matriz [2][2])
+{
+
+
+    for (int linha=0;linha < 2;linha ++)
+    {
+        printf("\n");
+        for(int coluna=0;coluna < 2;coluna++)
+        {
+            printf("\t%d", matriz[linha][coluna]);
+        }
+    }
+
+    printf("\n\n");
+
+}
+
+void definir_matriz(int m[2][2])
+{
+    printf("Preencha os valores dos elementos da matriz \n");
+    for (int linha = 0;linha< 2;linha++)
+    {
+        for(int coluna=0;coluna<2;coluna++)
+        {
+            printf("\n matriz[%d][%d]= ", linha,coluna);
+            int valor;
+            scanf("%d",&valor);
+            m[linha][coluna]=valor;
+        }
+    }
+}
+
+int main()
+{
+
+    int matriz [2][2];//Matriz 2 x 2
+    matriz[0][0]=12;
+    matriz[0][1]=23;
+    matriz[1][0]=51;
+    matriz[1][1]=12;
+
+    exibir_matriz(matriz);
+    definir_matriz(matriz);
+
+    return 0;
+}
+
+
