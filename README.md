@@ -816,4 +816,37 @@ struct Legume // Define o tipo estruturado Legume.
  }
 
 
+ ////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+  struct Legume // Define o tipo estruturado Legume.
+ {
+     char nome[60]; // Campo nome é string de 60 caracteres
+     float preco; // campo preço é float.
+     float quilos;
+ };
+
+ int main()
+ {
+
+   struct Legume produto;
+
+ //  char nome[60];
+   printf("Digite o nome do legume: ");
+   gets(produto.nome);
+//   strcpy(produto.nome, nome);// Copia a string digitada
+   printf("Digite o preco de cada quilo: ");
+   float preco;
+   scanf("%f",&preco);
+   produto.preco=preco;
+
+   printf("Legume %s com preco %.2f", produto.nome,produto.preco);
+
+ }
+
+
+
 
