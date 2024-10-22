@@ -757,3 +757,27 @@ int main()
 }
 
 
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+struct Legume // Define o tipo estruturado Legume.
+ {
+     char nome[60]; // Campo nome é string de 60 caracteres
+     float preco; // campo preço é float.
+     float quilos;
+ };
+
+ int main()
+ {
+     struct Legume cenoura; // Declara uma variável Legume
+     char nome1[60]="Cenoura";
+     strcpy(cenoura.nome, nome1);
+     cenoura.preco= 3.5f;
+     cenoura.quilos= 5.0f;
+
+     printf("Legume %s com preco %.2f e %.2f quilos.", cenoura.nome, cenoura.preco,cenoura.quilos);
+ }
+
+
